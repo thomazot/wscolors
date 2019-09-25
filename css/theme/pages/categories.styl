@@ -1,0 +1,19 @@
+.category-title
+    display: flex
+    align-items: center
+
+    h1
+        margin-right: 15px
+
+    &:after
+        content: ''
+        height: 2px
+        background: color2_bg
+        flex: 1
+        min-width: 0
+
+@media (min-width: 993px)
+    .category-title
+        h1
+            margin-right: 50px
+            font-weight: 900

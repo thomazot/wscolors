@@ -1,0 +1,26 @@
+<div class="prod__img">
+    @fotos @compartilhar @selos
+</div>
+<div class="prod__shop">
+    <div class="col">
+        <div class="prod__name">
+            <h1>@nome</h1>
+            <small class="sku">REF. @atributo(sku)</small>
+        </div>
+        @if(is_disponivel) @preco @preco(avista) @preco(parcelado) @brinde
+        @programa-fidelidade(Compre e Ganhe) @variacoes @bt(sobconsulta
+        "SobConsulta") @temporizador
+
+        <div class="prod__tamanho">
+            <p>Não sabe seu tamanho?</p>
+            <p>Consulte nossa <a href="#">tabela de medidas</a></p>
+        </div>
+
+        @bt(comprar) @else(is_disponivel)
+        <div class="prod__esgotado">
+            <div class="title title--sm">Produto Esgotado</div>
+            @alertas
+        </div>
+        @endif(is_disponivel)
+    </div>
+</div>

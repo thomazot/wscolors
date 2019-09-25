@@ -15,7 +15,6 @@ icon(i)
  * Update:   07/2018
  */
 /* Geral */
-
 input, select, textarea
     border-radius: 3px
     box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1)
@@ -792,9 +791,9 @@ form.searchautocomplete
     margin: 0 -0.5rem -1rem
 
 .products__item
-    flex: 1 1 250px
+    flex: 1 1 150px
     display: flex
-    min-width: 250px
+    min-width: 150px
     margin: 0
     padding: 0 0.5rem 1rem
 
@@ -2774,7 +2773,6 @@ body.ie .owl-prev:before, body.ie .owl-next:before
     display: flex
     align-items: center
     justify-content: flex-end
-
 
 .header .mywish, .header .mycart, .header .myaccount, .header .loginout
     margin-left: 1rem
@@ -9457,7 +9455,6 @@ table .change-product-link:hover
         column-count: 1
 
 /* ------ Header */
-
 /* ~992px */
 @media (max-width: 62rem)
     .header-container
@@ -9482,7 +9479,6 @@ table .change-product-link:hover
 
 /* ~568px */
 @media (max-width: 35.5rem)
-
     .header .logo img, .header .logo svg
         max-height: 2rem
         height: auto
@@ -9490,7 +9486,6 @@ table .change-product-link:hover
     .header .myaccount, .header .mycart
         margin-left: 0
         z-index: 10
-
 
 /* ------ Footer */
 /* ~1408px */
@@ -9768,49 +9763,6 @@ table .change-product-link:hover
         margin: -1rem -1rem 1rem
         border-radius: 0
 
-    /* Produto
-     * @relacionados
-     * @recomendados
-     * @quemviu
-     * @compre-junto
-     * @vendas-acima
-     */
-    .related__title, .recommended__title, .whosaw__title, .jointsales__title, .upsell__title
-        cursor: pointer
-        font-size: 1rem
-        font-weight: 700
-        padding: 1rem
-        margin: 0 -1rem
-        background: #fff
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1)
-        display: flex
-        align-items: center
-
-    .related__title:after, .recommended__title:after, .whosaw__title:after, .jointsales__title:after, .upsell__title:after
-        icon('\f105')
-        margin-left: auto
-
-    .related__content, .recommended__content, .whosaw__content, .jointsales__content, .upsell__content
-        position: fixed
-        top: 0
-        left: 0
-        width: 100vw
-        height: 100vh
-        overflow-y: auto
-        padding: 1rem
-        background: #fff
-        z-index: 999
-        transition: 600ms cubic-bezier(0.23, 1, 0.32, 1)
-        transform: translateX(100%)
-
-    .related.on .related__content, .recommended.on .recommended__content, .whosaw.on .whosaw__content, .jointsales.on .jointsales__content, .upsell.on .upsell__content
-        transform: translateX(0)
-
-    .related__hide, .recommended__hide, .whosaw__hide, .jointsales__hide, .upsell__hide
-        display: block
-        margin: -1rem -1rem 1rem
-        border-radius: 0
-
     /* @compre-junto */
     .jointsales__content
         display: block
@@ -9863,37 +9815,6 @@ table .change-product-link:hover
         border-top: 1px solid rgba(0, 0, 0, 0.1)
         opacity: 0.5
 
-    .reviews__title
-        font-size: 1rem
-        font-weight: 400
-        padding: 1rem
-        margin: 0 -1rem
-        background: #fff
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1)
-        display: flex
-        align-items: center
-
-    .reviews__title:after
-        icon('\f123')
-        margin-left: auto
-
-    .reviews__content
-        position: fixed
-        top: 0
-        left: 0
-        width: 100vw
-        height: 100vh
-        overflow-y: auto
-        padding: 1rem
-        background: #fff
-        z-index: 999
-        transition: 600ms cubic-bezier(0.23, 1, 0.32, 1)
-        transform: translateX(100%)
-        display: block
-
-    .reviews.on .reviews__content
-        transform: translateX(0)
-
     .reviews__resume, .reviews__ratings, .reviews__add
         padding: 0
         margin: 0
@@ -9909,10 +9830,6 @@ table .change-product-link:hover
     .reviews__no-reviews
         padding: 0
 
-    .reviews__hide
-        display: block
-        margin: -1rem -1rem 1rem
-        border-radius: 0
 
     /* @parcelamento & @simulador-frete */
     .parcelamento .title

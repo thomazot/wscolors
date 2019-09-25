@@ -1,0 +1,40 @@
+.filters
+    .title
+        display: none
+
+    &.on .title
+        display: flex
+
+    &__show
+        font-size: 10px
+        font-weight: bold
+        text-transform: uppercase
+        color: color1_bg
+        background: #fff
+        box-shadow: none
+        border: solid 2px color1_bg
+        margin-right: 15px
+
+    &__filter
+        box-shadow: none
+        padding: 0
+
+        &:hover
+            box-shadow: none
+
+        li a
+            font-size: 14px
+            font-weight: regular
+            text-transform: uppercase
+            color: #9e9e9e
+
+    &__name
+        font-size: 18px
+        font-weight: bold
+        color: color1_bg
+        text-transform: uppercase
+
+@media (min-width: 993px)
+    .filters
+        &__show
+            display: none

@@ -1,0 +1,38 @@
+.toolbar
+    .amount
+        opacity: 1
+        text-transform: uppercase
+        font-size: 10px
+        color: #9e9e9e
+
+        .total
+            font-weight: regular
+
+    .sorter
+        width: 100%
+        justify-content: space-between
+
+    .sort-by
+        label
+            font-size: 10px
+            font-weight: regular
+            color: #9e9e9e
+            opacity: 1
+            text-transform: uppercase
+
+        select
+            max-width: 100px
+
+@media (min-width: 993px)
+    .toolbar
+        .limiter, .view-mode
+            display: none
+
+        .amount
+            font-size: 20px
+
+        .sorter
+            width: auto
+
+        .sort-by label
+            font-size: 20px

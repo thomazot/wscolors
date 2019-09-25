@@ -1,6 +1,7 @@
 .products
     &__case
         box-shadow: none
+        justify-content: flex-start
 
     &__name
         display: block
@@ -55,6 +56,10 @@
 
 @media (min-width: 993px)
     .products
+        &__item
+            flex: 1 1 250px
+            min-width: 250px
+
         .cms-home &
             @extend .container
 

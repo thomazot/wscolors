@@ -179,6 +179,10 @@
                     selector: '.owl-prev',
                     mode: 'prepend',
                 },
+                'z-next': {
+                    selector: '.breadcrumb__sep',
+                    mode: 'html',
+                },
             }
             $j(document).ready(function() {
                 addSVG(svgs)
@@ -1507,6 +1511,72 @@ $j(document)
                 .closest('.footer__nav')
                 .toggleClass('on')
         })
+
+        // filter
+        if ($('.toolbar .sorter').length) {
+            var filterButton = $(
+                '<button type="button" class="filters__show">Filtros</button>'
+            )
+            $('.toolbar .sorter').prepend(filterButton)
+
+            $('.filters__show').click(function() {
+                $('.filters .title').trigger('click')
+            })
+        }
+        // product images
+        var gallery = $('.product-image-gallery img')
+        if (gallery.length) {
+            var thumbClone1 = $(
+                '<div id="prod__image--one" class="prod__image-list"></div>'
+            )
+            var thumbClone2 = $(
+                '<div id="prod__image--two" class="prod__image-list"></div>'
+            )
+
+            gallery.each(function() {
+                var image = $(
+                    '<div class="prod__image-item"><img src="' +
+                        $(this).attr('data-zoom-image') +
+                        '" /></div>'
+                )
+                thumbClone1.append(image.clone())
+                thumbClone2.append(image.clone())
+            })
+
+            $('.product-image-container').after(
+                $('<div class="prod__gallery"></div>')
+                    .append(
+                        $(
+                            '<div class="prod__image prod__image--one"></div>'
+                        ).append(thumbClone1)
+                    )
+                    .append(
+                        $(
+                            '<div class="prod__image prod__image--two"></div>'
+                        ).append(thumbClone2)
+                    )
+            )
+
+            $('.prod__image--one .prod__image-list').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: true,
+                asNavFor: '#prod__image--two',
+                prevArrow:
+                    '<button type="button" class="slick-prev"><svg class="ico z-prev"><use xlink:href="#z-prev" /></svg></button>',
+                nextArrow:
+                    '<button type="button" class="slick-next"><svg class="ico z-next"><use xlink:href="#z-next" /></svg></button>',
+            })
+
+            $('.prod__image--two .prod__image-list').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                vertical: true,
+                asNavFor: '#prod__image--one',
+                focusOnSelect: true,
+            })
+        }
     })
     .on('resizeStop', function(e) {
         // Safe window.resize

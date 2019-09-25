@@ -1,0 +1,30 @@
+.breadcrumb
+    background: #eeeeee
+    margin-top: -16px
+    box-shadow: -20px 0 0 #eee, 20px 0 0 #eee
+
+    &__home
+        .breadcrumb__link:before
+            display: none
+
+    &__link
+        font-size: 12px
+        text-transform: uppercase
+        color: #7c7c7c
+        padding: 15px 0
+
+    &__last
+        font-size: 12px
+        font-weight: bold
+        color: color1_bg
+        text-transform: uppercase
+
+    &__sep
+        .ico
+            width: 5px
+            height: 10px
+            fill: #7c7c7c
+
+@media (min-width: 993px)
+    .breadcrumb
+        box-shadow: -800px 0 0 #eee, 800px 0 0 #eee
