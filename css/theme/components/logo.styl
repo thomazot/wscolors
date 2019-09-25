@@ -1,4 +1,32 @@
 .logo
     .header &
+        flex: 1
+        min-width: 0
+
         img, svg
-            height: 48px
+            height: 51px
+            max-height: none
+            margin: 0 auto
+
+@media (min-width: 993px)
+    .logo
+        max-height: 100%
+
+        .header &
+            flex: 0 0 auto
+            margin: 20px 0
+
+            img, svg
+                height: 86px
+                max-height: 100%
+
+        .scrolling &
+            overflow: hidden
+            max-height: 42px
+            max-width: 55px
+
+            svg
+                position: relative
+                top: 0
+                left: 50%
+                transform: translateX(-50%)

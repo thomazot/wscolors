@@ -83,7 +83,7 @@ gulp.task('svg', function() {
         mode: {
             symbol: {
                 symbol: true,
-                inline: false,
+                inline: true,
             },
         },
     }

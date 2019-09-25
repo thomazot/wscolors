@@ -1,0 +1,87 @@
+.categories-image
+    margin-top: 25px
+
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+
+    &__label
+        font-size: 9px
+        font-weight: bold
+        margin-top: 20px
+
+    &__item
+        width: 25%
+        padding: 10px
+        text-align: center
+
+        img
+            height: auto
+            border-radius: 50%
+            object-fit: cover
+            border: solid 2px #fff
+
+        &:nth-child(1)
+            .categories-image__label
+                color: #f084a9
+
+            img
+                box-shadow: 0 0 0 3px #f084a9
+
+        &:nth-child(2)
+            .categories-image__label
+                color: color1_bg
+
+            img
+                box-shadow: 0 0 0 3px color1_bg
+
+        &:nth-child(3)
+            .categories-image__label
+                color: color2_bg
+
+            img
+                box-shadow: 0 0 0 3px color2_bg
+
+        &:nth-child(4)
+            .categories-image__label
+                color: #8b85ca
+
+            img
+                box-shadow: 0 0 0 3px #8b85ca
+
+@media (min-width: 500px)
+    .categories-image
+        &__label
+            font-size: 13px
+
+@media (min-width: 993px)
+    .categories-image
+        margin-top: 50px
+
+        &__container
+            @extend .container
+
+        &__label
+            font-size: 35px
+
+        img
+            max-width: 200px
+            border-width: 4px
+
+        &__item
+            &:nth-child(1)
+                img
+                    box-shadow: 0 0 0 10px #f084a9
+
+            &:nth-child(2)
+                img
+                    box-shadow: 0 0 0 10px color1_bg
+
+            &:nth-child(3)
+                img
+                    box-shadow: 0 0 0 10px color2_bg
+
+            &:nth-child(4)
+                img
+                    box-shadow: 0 0 0 10px #8b85ca

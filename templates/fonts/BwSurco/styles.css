@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'BwSurco';
+    src: 
+        url('BwSurcoDEMO-Regular.eot?#iefix') format('embedded-opentype'),  
+        url('BwSurcoDEMO-Regular.otf')  format('opentype'),     
+        url('BwSurcoDEMO-Regular.woff') format('woff'), 
+        url('BwSurcoDEMO-Regular.ttf')  format('truetype'), 
+        url('BwSurcoDEMO-Regular.svg#BwSurcoDEMO-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BwSurco';
+    src: 
+        url('BwSurcoDEMO-RegularItalic.eot?#iefix') format('embedded-opentype'),  
+        url('BwSurcoDEMO-RegularItalic.otf')  format('opentype'),     
+        url('BwSurcoDEMO-RegularItalic.woff') format('woff'), 
+        url('BwSurcoDEMO-RegularItalic.ttf')  format('truetype'), 
+        url('BwSurcoDEMO-RegularItalic.svg#BwSurcoDEMO-RegularItalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BwSurco';
+    src: 
+        url('BwSurcoDEMO-Medium.eot?#iefix') format('embedded-opentype'),  
+        url('BwSurcoDEMO-Medium.otf')  format('opentype'),     
+        url('BwSurcoDEMO-Medium.woff') format('woff'), 
+        url('BwSurcoDEMO-Medium.ttf')  format('truetype'), 
+        url('BwSurcoDEMO-Medium.svg#BwSurcoDEMO-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BwSurco';
+    src: 
+        url('BwSurcoDEMO-MediumItalic.eot?#iefix') format('embedded-opentype'),  
+        url('BwSurcoDEMO-MediumItalic.otf')  format('opentype'),     
+        url('BwSurcoDEMO-MediumItalic.woff') format('woff'), 
+        url('BwSurcoDEMO-MediumItalic.ttf')  format('truetype'), 
+        url('BwSurcoDEMO-MediumItalic.svg#BwSurcoDEMO-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BwSurco';
+    src: 
+        url('BwSurcoDEMO-Bold.eot?#iefix') format('embedded-opentype'),  
+        url('BwSurcoDEMO-Bold.otf')  format('opentype'),     
+        url('BwSurcoDEMO-Bold.woff') format('woff'), 
+        url('BwSurcoDEMO-Bold.ttf')  format('truetype'), 
+        url('BwSurcoDEMO-Bold.svg#BwSurcoDEMO-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BwSurco';
+    src: 
+        url('BwSurcoDEMO-BoldItalic.eot?#iefix') format('embedded-opentype'),  
+        url('BwSurcoDEMO-BoldItalic.otf')  format('opentype'),     
+        url('BwSurcoDEMO-BoldItalic.woff') format('woff'), 
+        url('BwSurcoDEMO-BoldItalic.ttf')  format('truetype'), 
+        url('BwSurcoDEMO-BoldItalic.svg#BwSurcoDEMO-BoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BwSurco';
+    src: 
+        url('BwSurcoDEMO-Black.eot?#iefix') format('embedded-opentype'),  
+        url('BwSurcoDEMO-Black.otf')  format('opentype'),     
+        url('BwSurcoDEMO-Black.woff') format('woff'), 
+        url('BwSurcoDEMO-Black.ttf')  format('truetype'), 
+        url('BwSurcoDEMO-Black.svg#BwSurcoDEMO-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BwSurco';
+    src: 
+        url('BwSurcoDEMO-BlackItalic.eot?#iefix') format('embedded-opentype'),  
+        url('BwSurcoDEMO-BlackItalic.otf')  format('opentype'),     
+        url('BwSurcoDEMO-BlackItalic.woff') format('woff'), 
+        url('BwSurcoDEMO-BlackItalic.ttf')  format('truetype'), 
+        url('BwSurcoDEMO-BlackItalic.svg#BwSurcoDEMO-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}

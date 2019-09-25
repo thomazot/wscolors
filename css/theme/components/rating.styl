@@ -1,0 +1,19 @@
+.product-rate
+    .rating-box
+        font-size: 9px
+
+        &:before
+            content: '\f004\f004\f004\f004\f004'
+            text-shadow: 1px 0 0 color1_bg, -1px 0 0 color1_bg, 0 1px 0 color1_bg, 0 -1px 0 color1_bg
+            letter-spacing: 6px
+            color: #fff
+
+        .rating:before
+            content: '\f004\f004\f004\f004\f004'
+            letter-spacing: 6px
+            color: color1_bg
+
+@media (min-width: 993px)
+    .product-rate
+        .rating-box
+            font-size: 20px

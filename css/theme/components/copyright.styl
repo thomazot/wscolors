@@ -1,0 +1,44 @@
+.copyright
+    padding: 0 20px
+    font-size: 10px
+    font-weight: regular
+    text-transform: uppercase
+    color: color1_bg
+    text-align: center
+
+    &__container
+        > div
+            padding: 10px 0
+
+    .desigual
+        display: inline-block
+        width: 100px
+        height: 25px
+
+    &__right
+        font-size: 12px
+        font-weight: bold
+
+@media (min-width: 993px)
+    .copyright
+        font-size: 12px
+        font-weight: bold
+        margin-bottom: 30px
+
+        &__container
+            display: flex
+            align-items: center
+            justify-content: space-between
+            max-width: viewport
+            margin: 0 auto
+
+        &__right
+            display: flex
+            justify-content: flex-end
+            align-items: center
+
+            .icon-heart
+                margin: 0 3px
+
+        .desigual
+            margin-left: 10px

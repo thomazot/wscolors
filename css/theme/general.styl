@@ -1,5 +1,21 @@
 
 /**
+ *  Fonts
+ */
+@import 'typography'
+
+font = unquote('BwSurco, sans-serif')
+
+:root
+    --color-one: 227, 69, 123
+    --color-two: 156, 215, 214
+    --color-three: 252, 214, 114
+
+z-opacity(variable, opacity = 1)
+    // return rgba as a string so it doesn't get interpolated by stylus compiler
+    s('rgba(var(%s), %s)', variable, opacity)
+
+/**
  * Mixins
  */
 /**
@@ -13,7 +29,7 @@ bold = 700
 /**
  * Mixin - Viewport
  */
-viewport = 1160px
+viewport = 1200px
 /**
  * Mixin - Responsive
  * @media (max-width screen-sm-min)
@@ -40,17 +56,33 @@ screen-lg = 1200px
     margin: 0 auto
     width: auto
 
+.header, .main-container
+    @extend .container
+
+.cms-home .main-container
+    max-width: none
+
 /*
  * Base
  * Estilo base do elementos do Html
  */
-body
-    font-family: 'Exo 2', sans-serif
+html
+    font-family: font
+    font-weight: 400
 
 /*
  * Components
  * Componentes que se adaptam ao contexto
  */
+.wrapper-container
+    padding-top: 83px
+
+    @media (min-width: 993px)
+        padding-top: 157px
+
+input[type=text], input[type=password], input[type=search], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=date], input[type=mounth], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color]
+    box-shadow: none
+
 /*
  * Component - Menssagens
  */
@@ -87,5 +119,20 @@ body
 /**
  * Components
  */
+@import 'components/header'
 @import 'components/logo'
 @import 'components/categories'
+@import 'components/myaccount'
+@import 'components/search'
+@import 'components/mycart'
+@import 'components/myhelper'
+@import 'components/footer'
+@import 'components/copyright'
+@import 'components/owl'
+@import 'components/rating'
+@import 'components/products'
+@import 'components/prices'
+@import 'components/banner'
+@import 'components/categories-image'
+@import 'components/instagram'
+@import 'components/newsletter'

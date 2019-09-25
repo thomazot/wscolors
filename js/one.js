@@ -155,6 +155,30 @@
                     selector: '.toolbar .view-mode .list',
                     mode: 'html',
                 },
+                'z-close': {
+                    selector: '.categories__hide',
+                    mode: 'html',
+                },
+                'z-user-m': {
+                    selector: '.mymenu .z-user a',
+                    mode: 'prepend',
+                },
+                'z-order-m': {
+                    selector: '.mymenu .z-order a',
+                    mode: 'prepend',
+                },
+                'z-helper-m': {
+                    selector: '.mymenu .z-helper a',
+                    mode: 'prepend',
+                },
+                'z-next': {
+                    selector: '.owl-next',
+                    mode: 'prepend',
+                },
+                'z-prev': {
+                    selector: '.owl-prev',
+                    mode: 'prepend',
+                },
             }
             $j(document).ready(function() {
                 addSVG(svgs)
@@ -688,7 +712,7 @@
         fix_catalog_flexbox: true,
         // responsive
         m_categories: true,
-        m_search: true,
+        m_search: false,
         m_filters: true,
         m_myaccount: true,
         m_mycart: true,
@@ -900,11 +924,11 @@ function default_carrossel_produtos() {
                     navigationText: ['?', '?'],
                     items: 5,
                     itemsCustom: [
-                        [0, 1],
+                        [0, 2],
                         [568, 2],
                         [768, 3],
                         [1024, 4],
-                        [1270, 5],
+                        [1270, 4],
                     ],
                     beforeMove: function() {
                         if (typeof $j.fn.lazyload != 'undefined') {
@@ -1328,7 +1352,7 @@ $j.fn.neonTheme.custom = {
     fix_catalog_flexbox: true, // adiciona elementos para arrumar o flexbox do catálogo
     /* - Responsivo */
     m_categories: true, // ativa o responsivo do Menu de Categorias
-    m_search: true, // ativa o responsivo da Busca
+    m_search: false, // ativa o responsivo da Busca
     m_filters: true, // ativa o responsivo dos Filtros do Catálogo
     m_myaccount: true, // ativa o responsivo da Minha Conta
     m_mycart: true, // ativa o responsivo do Meu Carrinho
@@ -1446,10 +1470,42 @@ $j(document)
         scrollTop()
 
         // Menu Categories
-        $('.categories .parent').click(function(event) {
-            if ($(event.target).hasClass('parent')) {
-                $(event.target).toggleClass('on')
+        $('.categories .parent').each(function() {
+            var button = $(
+                '<button type="button" class="categories__more"><svg class="categories__icon"><use xlink:href="#z-down" /></svg></button>'
+            )
+            $(this)
+                .find('> a')
+                .after(button)
+
+            button.on('click', function() {
+                $(this)
+                    .closest('li')
+                    .find('> ul')
+                    .slideToggle('fast')
+            })
+        })
+        var categoriesNavs = $('.categories__navs')
+        if (categoriesNavs.length) {
+            $('.categories').append(categoriesNavs)
+        }
+
+        // Search
+        $('.search__show').click(function() {
+            $('.header .search').toggleClass('on')
+        })
+
+        $('.search').click(function(event) {
+            if ($(event.target).hasClass('search')) {
+                $('.header .search').removeClass('on')
             }
+        })
+
+        // Footer
+        $('.footer__nav .footer__title').click(function() {
+            $(this)
+                .closest('.footer__nav')
+                .toggleClass('on')
         })
     })
     .on('resizeStop', function(e) {

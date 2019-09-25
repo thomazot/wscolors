@@ -15,8 +15,6 @@ icon(i)
  * Update:   07/2018
  */
 /* Geral */
-html
-    background: #f9f9f9
 
 input, select, textarea
     border-radius: 3px
@@ -1461,41 +1459,6 @@ form.searchautocomplete
 .mycart
     position: relative
     z-index: 20
-    height: 2.75rem
-
-.mycart__header a
-    position: relative
-    display: flex
-    align-items: center
-    justify-content: center
-    height: 2.75rem
-    width: 2.75rem
-    box-shadow: inset 0 0 0 1px color1_bg
-    border-radius: 100%
-
-.mycart__header .ico
-    fill: color1_bg
-    width: 1rem
-    height: 1rem
-    max-height: none
-
-.mycart__header .text
-    display: none
-
-.mycart__header .qtd
-    position: absolute
-    top: 0
-    right: -0.25rem
-    width: 1rem
-    height: 1rem
-    border-radius: 100%
-    background: color1_bg_hover
-    color: color1_font_hover
-    line-height: 1rem
-    text-align: center
-    font-size: 0.7rem
-    letter-spacing: -0.1em
-    text-indent: -1.5px
 
 .mycart__content
     max-height: 80vh
@@ -1629,41 +1592,6 @@ form.searchautocomplete
     position: relative
     z-index: 20
     height: 2.75rem
-
-.myaccount__header a
-    position: relative
-    display: flex
-    align-items: center
-    justify-content: center
-    height: 2.75rem
-    width: 2.75rem
-    overflow: hidden
-    box-shadow: inset 0 0 0 1px color1_bg
-    border-radius: 100%
-
-.myaccount__header .thumb
-    position: absolute
-    top: 0
-    left: 0
-
-.myaccount__header .thumb img
-    display: block
-    width: auto
-    height: 2.75rem
-    min-width: 100%
-
-.myaccount__header .thumb:empty
-    display: none
-
-.myaccount__header .ico
-    fill: color1_bg
-    width: 2.75rem
-    height: 2.75rem
-    max-height: none
-    margin: 0
-
-.myaccount__header .name, .myaccount__header .text
-    display: none
 
 .myaccount__content
     position: absolute
@@ -2842,82 +2770,17 @@ body.ie .owl-prev:before, body.ie .owl-next:before
     background: #fff
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2)
 
-.header-container .categories:not(.categories--mini)
-    padding: 0 1rem
-    margin: 0 -1rem
-
 .header
-    padding-top: 1rem
     display: flex
     align-items: center
     justify-content: flex-end
 
-.header .search
-    flex: 1 1 auto
-    margin-left: 1rem
 
 .header .mywish, .header .mycart, .header .myaccount, .header .loginout
     margin-left: 1rem
 
 .header .loginout
     text-align: right
-
-/* Footer */
-.footer-container
-    background: linear-gradient(color1_bg, color1_bg_hover)
-    padding: 1rem 0
-    margin: 4rem -1rem 0
-
-.footer
-    color: color1_font
-    font-size: 0.8rem
-
-.footer .newsletter
-    background: rgba(0, 0, 0, 0.2)
-    box-shadow: -980px 0 0 rgba(0, 0, 0, 0.2), 980px 0 0 rgba(0, 0, 0, 0.2)
-    padding: 1rem 0
-    margin-top: -1rem
-    font-size: 1rem
-    border-bottom: 1px solid rgba(0, 0, 0, 0)
-
-.footer .newsletter .title
-    color: color1_font
-    text-align: center
-
-.footer .flex .title
-    font-size: 1rem
-    opacity: 0.5
-    color: color1_font
-
-.footer .std
-    color: color1_font
-
-.footer .tele
-    font-size: 2rem
-
-.footer .email
-    font-weight: 600
-    padding-top: 0.5rem
-
-.footer a
-    color: color1_font
-
-.footer a:hover
-    color: color1_font_hover
-
-.footer .myaccount__header a
-    margin-left: auto
-    background: #fff !important
-    box-shadow: 0 0 0 4px #fff
-
-.footer .myaccount__header a:hover
-    box-shadow: 0 0 0 4px #fff, 0 1rem 1rem -0.5rem rgba(0, 0, 0, 0.3)
-
-.footer .myaccount__content
-    display: none !important
-
-.footer .socials
-    padding-top: 1rem
 
 /* Home */
 .cms-home .header-container + .banner
@@ -9176,45 +9039,6 @@ table .change-product-link:hover
     .logo .has-m-img .m-img
         display: block !important
 
-/* ------ Coleção de Produtos */
-/* ~568px */
-@media (max-width: 35.5rem)
-    .products__item
-        flex: 1 1 100%
-
-    .products__case
-        display: flex
-        flex-flow: row nowrap
-
-    .product__header
-        padding: 1rem 0 1rem 1rem
-        flex: 0 0 40%
-
-    .product__main
-        display: block
-
-    .product__name
-        font-size: 1rem
-        line-height: 1.2rem
-        height: 2.4rem
-        overflow: hidden
-        word-break: break-word
-        position: relative
-
-    .product__name:after
-        content: ''
-        display: block
-        height: 1.2rem
-        width: 25%
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0), #fff)
-        position: absolute
-        bottom: 0
-        right: 0
-
-    .products .configurable-swatch-list, .products .price-box-avista, .products .price-box-parcelado
-        display: none
-
-/* ------ Menu de Categorias */
 /* ~1528px */
 @media (max-width: 95.5rem)
     .categories--carrossel .owl-prev
@@ -9269,26 +9093,6 @@ table .change-product-link:hover
         max-height: none
         overflow: visible
         padding: 0
-
-    .categories--mobi .all-li--0
-        box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1)
-        max-width: none
-
-    .categories--mobi .all-a--0
-        padding: 0.875rem 1rem
-        font-size: 1rem
-        color: color1_font
-
-    .categories--mobi .all-ul--1
-        font-size: 1rem
-        background: rgba(0, 0, 0, 0.1)
-
-    .categories--mobi .all-li--1
-        box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1)
-
-    .categories--mobi .all-a--1
-        padding: 0.875rem 1rem
-        color: color1_font
 
     .categories--mobi .all-ul--2
         font-size: 0.8rem
@@ -9425,9 +9229,6 @@ table .change-product-link:hover
 
     .mycart.on .mycart__content
         transform: translateX(0)
-
-    .mycart__header .ico
-        fill: color1_bg !important
 
     .mycart__hide
         display: block
@@ -9574,9 +9375,6 @@ table .change-product-link:hover
         display: block !important
         width: 100%
 
-    .banner .owl-controls
-        display: none !important
-
     .banner--nojs .banner__wrapper
         column-count: 2
 
@@ -9652,11 +9450,6 @@ table .change-product-link:hover
         right: 0
         left: auto
 
-/* ~992px */
-@media (max-width: 62rem)
-    .owl-buttons
-        display: none
-
 /* ------ Feed RSS */
 /* ~992px */
 @media (max-width: 62rem)
@@ -9664,18 +9457,12 @@ table .change-product-link:hover
         column-count: 1
 
 /* ------ Header */
-/* ~1408px */
-@media (max-width: 88rem)
-    .header
-        padding-left: 1rem
-        padding-right: 1rem
 
 /* ~992px */
 @media (max-width: 62rem)
     .header-container
         display: flex
         align-items: center
-        background: color1_bg
         margin: 0
 
     .header
@@ -9695,57 +9482,6 @@ table .change-product-link:hover
 
 /* ~568px */
 @media (max-width: 35.5rem)
-    .header
-        padding: 0.125rem 0 0.125rem 1rem
-        margin: 0 !important
-
-    .header .search
-        flex: 0 0 auto
-        margin-left: auto
-        z-index: 20
-
-    .header .search__button
-        box-shadow: none
-
-    .header .search__form .input-box
-        display: none
-
-    .header .search.on .search__form .input-box
-        position: fixed
-        top: 0
-        left: 0
-        z-index: 999
-        display: block
-        width: 100vw
-
-    .header .search.on .search__input
-        height: 3rem
-        width: 100%
-        padding: 1rem 3.75rem 1rem 1rem
-        background: color1_bg
-        color: color1_font
-        box-shadow: none
-
-    .header .search.on .search__input::-webkit-input-placeholder
-        color: color1_font
-
-    .header .search.on .search__input::-moz-placeholder
-        color: color1_font
-
-    .header .search.on .search__input:-ms-input-placeholder
-        color: color1_font
-
-    .header .search.on .search__input:-moz-placeholder
-        color: color1_font
-
-    .header .search__hide
-        position: fixed
-        top: 0.125rem
-        right: 0.125rem
-        z-index: 9999
-        box-shadow: none
-        background: none
-        display: block
 
     .header .logo img, .header .logo svg
         max-height: 2rem
@@ -9755,12 +9491,6 @@ table .change-product-link:hover
         margin-left: 0
         z-index: 10
 
-    .header .myaccount__header, .header .mycart__header
-        padding: 0.375rem
-
-    .header .myaccount__header a, .header .mycart__header a
-        width: 2rem
-        height: 2rem
 
 /* ------ Footer */
 /* ~1408px */

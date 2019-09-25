@@ -1,0 +1,61 @@
+.price-box
+    .regular-price, .special-price, .minimal-price
+        .label
+            display: none
+
+        .price span
+            font-size: 19px
+            font-weight: 900
+            color: #8b85ca
+
+    .old-price
+        .label
+            display: none
+
+        .price span
+            font-size: 12px
+            font-weight: regular
+            text-decoration: line-through
+            color: #818181
+
+.price-box-parcelado .preco-parcelado
+    display: none
+
+    &-sem-juros
+        font-size: 13px
+        font-weight: medium
+        color: color1_bg
+
+        .upto
+            display: none
+
+        .num, .value
+            span
+                font-size: 13px
+                font-weight: medium
+                color: color1_bg
+
+        .s-juros
+            &:after
+                content: 's/ juros'
+
+            span
+                display: none
+
+@media (min-width: 993px)
+    .price-box
+        .regular-price, .special-price, .minimal-price
+            .price span
+                font-size: 33px
+
+        .old-price
+            .price span
+                font-size: 21px
+
+    .price-box-parcelado .preco-parcelado
+        &-sem-juros
+            font-size: 24px
+
+            .num, .value
+                span
+                    font-size: 24px

@@ -1,0 +1,32 @@
+[id*=home-banner-vitrine]
+    .banner
+        &__wrapper
+            column-count: 1
+            display: block
+
+        &__item
+            margin: 15px 0
+
+    img
+        width: 100%
+        object-fit: contain
+
+@media (min-width: 993px)
+    [id*=home-banner-vitrine]
+        .banner
+            &__item
+                margin: 25px 0
+
+    #banner__home_banner_full
+        text-align: center
+
+        .owl-controls
+            position: relative
+            display: inline-flex
+            justify-content: center
+            align-items: center
+            height: 100px
+            padding: 0 100px
+
+        .owl-pagination
+            padding-top: 0

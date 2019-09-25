@@ -1,0 +1,48 @@
+.owl
+    &-page
+        span
+            width: 10px
+            height: 10px
+            border: solid 2px color1_bg
+            background: #fff
+            opacity: 1
+
+        &.active
+            span
+                background: color2_bg
+                box-shadow: inset 0 0 0 2px #fff
+
+    &-prev
+        left: -20px
+
+    &-next
+        left: auto
+        right: -20px
+
+    &-next, &-prev
+        display: flex
+        justify-content: center
+        align-items: center
+        text-indent: 0
+        background: rgba(255, 255, 255, 0)
+        box-shadow: none
+
+        &:before
+            display: none
+
+        .ico
+            width: 10px
+            height: 30px
+            fill: color1_bg
+
+@media (min-width: 993px)
+    .owl
+        &-page
+            span
+                width: 16px
+                height: 16px
+
+        &-next, &-prev
+            .ico
+                width: 23px
+                height: 58px

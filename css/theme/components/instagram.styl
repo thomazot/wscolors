@@ -1,0 +1,76 @@
+.instagram
+    &__container
+        @extend .container
+
+    &__title
+        display: flex
+        justify-content: center
+        padding: 15px 0
+        font-size: 12px
+        font-weight: medium
+        color: color1_bg
+
+        strong
+            display: block
+            font-weight: 900
+
+    &__main
+        display: flex
+        justify-content: center
+
+        a
+            display: block
+            margin: 5px
+
+        img
+            width: 385px
+            object-fit: cover
+
+    &__actions
+        text-align: center
+
+        a
+            font-size: 12px
+            font-weight: regular
+            color: color1_bg
+
+    .socials
+        margin: 15px 0
+
+        &__list
+            justify-content: center
+
+        &__img
+            max-height: 27px
+
+@media (min-width: 993px)
+    .instagram
+        &__title
+            font-size: 20px
+            align-items: center
+
+            &:before, &:after
+                content: ''
+                flex: 1
+                min-width: 0
+                height: 4px
+                background: color2_bg
+
+            span
+                margin: 0 50px
+
+        &__main
+            margin: 0 -10px
+
+            a
+                margin: 10px
+
+        &__actions
+            a
+                font-size: 36px
+
+        .socials
+            margin: 40px 0
+
+            &__img
+                max-height: 50px

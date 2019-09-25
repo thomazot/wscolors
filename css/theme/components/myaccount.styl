@@ -1,0 +1,44 @@
+.myaccount
+    display: none
+    height: auto
+
+    .header &
+        margin: 0
+
+    &__icon
+        --color-1: color1_bg
+        --color-2: color2_bg
+        width: 22px
+        height: 29px
+
+    &__header
+        display: flex
+        justify-content: center
+        align-items: center
+        min-width: 55px
+
+    &:hover
+        .myaccount__header a
+            background: none
+
+@media (min-width: 993px)
+    .myaccount
+        display: flex
+
+        &__content
+            background: #fff
+            box-shadow: none
+            box-sizing: content-box
+            background-clip: padding-box
+            border: solid 20px rgba(255, 255, 255, 0)
+            border-radius: 30px
+
+            .title
+                font-size: 16px
+                font-weight: regular
+                text-transform: uppercase
+                color: color1_bg
+
+        &__register
+            .std
+                font-size: 13px

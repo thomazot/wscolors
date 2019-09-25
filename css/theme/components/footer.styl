@@ -1,0 +1,217 @@
+.footer
+    padding: 20px
+    background: color1_bg
+    color: #fff
+    text-align: center
+    width: 100%
+    max-width: none
+
+    &-container
+        margin: 0 -16px
+        position: relative
+        padding-top: 8px
+
+        &:before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 8px
+            background: linear-gradient(to right, color1_bg 44%, color2_bg 44% 72%, color3_bg 72%)
+
+    &__title
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 12px
+        font-weight: bold
+        text-transform: uppercase
+
+        .ico
+            width: 9px
+            height: 5px
+            fill: #fff
+            margin-left: 9px
+            transition: all 0.2s ease
+
+    &__legend
+        font-size: 10px
+        font-weight: regular
+        text-transform: uppercase
+        margin: 15px 0
+
+    &__livre
+        width: 121px
+        height: 80px
+        margin-top: 15px
+        fill: #fff
+
+    &__social
+        &--livre
+            .socials
+                &__list
+                    display: block
+
+                &__name
+                    display: block
+                    margin: 10px 0
+                    font-size: 10px
+                    text-transform: uppercase
+                    color: #fff
+
+    .socials
+        margin-top: 15px
+
+        &__img
+            filter: brightness(0) invert(1)
+            width: auto
+            max-height: 30px
+
+        &__list
+            justify-content: center
+
+    .mymenu
+        display: none
+        margin-top: 10px
+
+        .a--0
+            font-size: 10px
+            font-weight: regular
+            text-transform: uppercase
+            color: #fff
+
+    &__nav
+        margin: 10px 0
+
+        &.on
+            .mymenu
+                display: block
+
+            .ico
+                transform: rotate(180deg)
+
+    &__row
+        max-width: viewport
+        margin: 0 auto
+
+        &--two
+            background: color2_bg
+            margin: -20px
+            padding: 20px
+            display: flex
+            flex-flow: column nowrap
+
+    &__brand
+        margin: 5px
+
+        &--logo
+            order: -1
+            flex: 0 0 100%
+
+            svg
+                width: 200px
+                height: 81px
+                fill: #fff
+
+        &--eco svg
+            width: 71px
+            height: 50px
+            fill: #fff
+
+        &--brasil svg
+            width: 43px
+            height: 62px
+
+    &__right
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-flow: row wrap
+        margin: 5px 0
+        order: -1
+        font-size: 14px
+        font-weight: regular
+
+    &__address
+        margin-bottom: 8px
+
+    &__city
+        font-weight: bold
+
+    &__store-name
+        font-size: 18px
+        font-weight: bold
+        padding: 8px 0
+
+@media (min-width: 993px)
+    .footer
+        text-align: left
+
+        &-container:before
+            display: none
+
+        &__nav
+            margin: 0
+
+        &__row
+            display: flex
+            justify-content: space-between
+            align-items: stretch
+
+            &--one
+                padding: 35px 0 50px
+
+            &--two
+                flex-flow: row nowrap
+                background: #f084a9
+                box-shadow: -800px 0 0 #f084a9, 800px 0 0 #f084a9
+                padding: 20px 0
+                margin: -20px auto
+
+        &__title
+            font-size: 14px
+            justify-content: flex-start
+
+            .ico
+                display: none
+
+        &__legend
+            font-size: 12px
+
+        &__social
+            &--livre
+                .socials
+                    &__name
+                        font-size: 12px
+                        padding-left: 10px
+
+                    &__link
+                        display: flex
+                        justify-content: flex-start
+                        align-items: center
+
+        &__right
+            order: 1
+
+        &__left
+            font-size: 14px
+
+        &__store-title
+            font-size: 18px
+
+        &__brand
+            &--logo
+                flex: 0 0 auto
+                order: 2
+                margin-left: 50px
+
+        .mymenu
+            display: block
+
+            .a--0
+                font-size: 12px
+
+        .socials
+            &__list
+                justify-content: flex-start
