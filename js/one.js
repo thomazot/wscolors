@@ -179,10 +179,6 @@
                     selector: '.owl-prev',
                     mode: 'prepend',
                 },
-                'z-next': {
-                    selector: '.breadcrumb__sep',
-                    mode: 'html',
-                },
             }
             $j(document).ready(function() {
                 addSVG(svgs)
@@ -1470,9 +1466,22 @@ function scrollTop() {
 $j(document)
     .ready(function($) {
         // document.ready
+        // SVGs
+
+        addSVG({
+            'z-next': {
+                selector: '.breadcrumb__sep',
+                mode: 'html',
+            },
+        })
         // Scrolling
         scrollTop()
 
+        if ($('.jointsales__payments').length) {
+            $('.jointsales__totals')
+                .append($('.jointsales__payments'))
+                .append($('.jointsales__action'))
+        }
         // Menu Categories
         $('.categories .parent').each(function() {
             var button = $(

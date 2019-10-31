@@ -1,0 +1,158 @@
+.jointsales
+    margin-bottom: 50px !important
+
+    .jointsales__currentin, .jointsales__item
+        text-align: center
+
+        .title
+            font-size: 21px
+            font-weight: regular
+            color: color1_bg
+            line-height: 25px
+
+        .price-box
+            display: none
+
+    &__title
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 21px
+        font-weight: medium
+        text-align: center
+        text-transform: uppercase
+        color: color1_bg
+
+        > span
+            padding: 0 20px
+
+        &:before, &:after
+            content: ''
+            height: 2px
+            background: color2_bg
+            flex: 1
+            min-width: 0
+
+        strong
+            display: block
+            font-weight: 900
+
+    &__row
+        display: flex
+
+    &__currentin
+        display: block
+        padding: 0
+        box-shadow: none
+
+    &__current
+        flex: 0 0 50%
+
+        + .jointsales__list
+            flex: 0 0 50%
+
+    &__item
+        display: block
+        padding: 0
+
+    &__totals
+        flex: 0 0 100%
+        text-align: center
+
+        .economize
+            display: none
+
+        .todos-juntos
+            font-size: 0
+
+            .price
+                font-size: 30px
+                font-weight: medium
+                text-decoration: line-through
+                color: #898989
+
+        .comprando-junto
+            font-size: 0
+
+            .price
+                font-size: 47px
+                font-weight: 900
+                color: color1_bg
+
+    &__payments
+        display: inline-block
+
+        .avista
+            display: none
+
+        .preco-parcelado
+            display: none
+
+            &-sem-juros
+                display: inline-block
+                font-size: 22px
+                font-weight: medium
+                color: color1_bg
+
+                .upto
+                    display: none
+
+                .value
+                    &:after
+                        content: 's/ juros'
+                        font-size: 22px
+                        color: #898989
+                        padding-left: 3px
+
+                .s-juros
+                    display: none
+
+    .more
+        top: 50%
+        right: 0
+        transform: translateY(-50%)
+        color: color1_bg
+
+    .jointsales
+        &__row
+            padding: 0
+            box-shadow: none
+
+    .owl-wrapper-outer
+        border: 0
+
+    .btn-jointsales
+        display: inline-block
+        font-size: 26px
+        font-weight: bold
+        text-transform: uppercase
+        letter-spacing: 1px
+        background: color2_bg
+        box-shadow: none
+        height: 50px
+        padding: 0 20px
+
+@media (min-width: 993px)
+    .jointsales
+        .thumb
+            margin-bottom: 0
+
+        &__totals
+            align-self: center
+            margin-top: 0
+
+        &__totals, &__current, &__list
+            flex: 0 0 auto
+
+        &__current
+            + .jointsales__list
+                flex: 0 0 auto
+
+        &__item
+            flex: 0 0 100%
+            max-width: none
+
+        &__row
+            flex-wrap: nowrap
+            justify-content: center
+            aling-items: center

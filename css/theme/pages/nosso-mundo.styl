@@ -1,0 +1,174 @@
+.cms-nosso-mundo
+    .main, .main-container
+        max-width: none
+
+    .col-main
+        width: auto
+        max-width: calc(100% + 32px)
+        margin: 0 -16px
+
+    .page-title
+        display: none
+
+    .video-fix-frame
+        width: 100%
+        height: 715px
+        display: block
+
+    .slide__youtube
+        left: 0
+        transform: none
+        padding-right: 0
+
+.nosso-mundo
+    margin-top: -16px
+
+    &__container
+        padding: 0 20px
+        width: 100%
+        max-width: viewport
+        margin: 0 auto
+
+        img
+            display: block
+            width: 100%
+            height: auto
+            object-fit: contain
+
+    &__sobre-nos
+        background: color1_bg
+        border-top: 40px solid color2_bg
+        color: #fff
+
+    &__col
+        padding: 20px 0
+
+    &__content
+        p
+            font-size: 14px
+            font-weight: regular
+
+    &__title
+        .std &-vertical
+            span
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                font-size: 14px
+                font-weight: regular
+                text-transform: uppercase
+                margin: 20px 0
+
+                &:after
+                    flex: 1
+                    min-width: 0
+                    content: ''
+                    height: 1px
+                    min-height: 1px
+                    background: #fff
+                    margin-left: 20px
+
+        .std &-one
+            font-size: 80px
+            line-height: 1
+            margin-bottom: 0
+
+            span
+                display: block
+                line-height: 1
+                position: relative
+                z-index: 1
+                text-shadow: 4px -4px 0 color1_bg, -4px -4px 0 color1_bg
+
+                &:not(:nth-child(1))
+                    margin-top: -50px
+
+                &:nth-child(2)
+                    color: color2_bg
+
+                &:nth-child(3)
+                    color: color3_bg
+
+        .std &-two
+            font-size: 66px
+            line-height: 1
+            margin-bottom: 0
+            color: color1_bg
+
+            span
+                display: block
+                line-height: 1
+                position: relative
+                z-index: 1
+                text-shadow: 2px -2px 0 #fff, -2px -2px 0 #fff
+
+                &:not(:nth-child(1))
+                    margin-top: -34px
+
+                &:nth-child(2)
+                    color: color2_bg
+
+                &:nth-child(3)
+                    color: color3_bg
+
+    &__foco
+        color: color1_bg
+
+        .nosso-mundo
+            &__title
+                .std &-vertical
+                    span
+                        color: color1_bg
+
+                        &:after
+                            background: color1_bg
+
+    .std &__h5
+        font-size: 32px
+        font-weight: 900
+        line-height: 1
+        margin: 15px 0
+
+@media (min-width: 993px)
+    .nosso-mundo
+        &__container
+            display: flex
+            align-items: flex-start
+            position: relative
+            padding-left: 70px
+
+        .std &__title-vertical
+            position: absolute
+            left: 0
+            margin: 0
+
+            span
+                width: 240px
+                margin: 0
+                position: absolute
+                transform: rotate(-90deg)
+                margin-left: -100px
+                margin-top: 107px
+
+        &__sobre-nos
+            .nosso-mundo__col
+                flex: 1
+                min-width: 0
+
+            .nosso-mundo__col:nth-child(3)
+                flex: 0 0 40%
+                margin-left: 40px
+
+        &__foco
+            padding: 20px 0
+
+            .nosso-mundo
+                .std &__title-vertical
+                    span
+                        width: 440px
+                        margin-left: -200px
+                        margin-top: 180px
+
+            .nosso-mundo__col:nth-child(3)
+                flex: 0 0 60%
+                margin-left: 40px
